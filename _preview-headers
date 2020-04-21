@@ -1,0 +1,3 @@
+# included by makefile when running non-production deploys
+/*
+    Basic-Auth: preview:pass

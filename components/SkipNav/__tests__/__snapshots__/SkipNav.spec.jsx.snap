@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SkipNav /> renders correctly 1`] = `
+"<div className=\\"skip-nav\\">
+  <a href=\\"#main\\" className=\\"skip-nav__link\\">
+    Skip to main content
+  </a>
+</div>"
+`;

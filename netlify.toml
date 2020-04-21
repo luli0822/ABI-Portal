@@ -1,0 +1,53 @@
+
+[build]
+  # build command that will apply the password headers to non-production builds
+  # if you're using two separate sites (one for production, one for all dev branches), you can
+  # probably just add a site password to the dev site in Netlify, set command = './netlify-build.sh', and remove the command override for [context.production]
+  # command = "./netlify-build.sh && cp _preview-headers out/_headers"
+  command = "./netlify-build.sh"
+  publish = "out"
+
+[build.environment]
+  # defines the path we want static assets to be available at on the server
+  # useful if you are exposing an app in a subdirectory behind a reverse proxy
+  # see readme.
+  # used by next.config.js
+  # DO NOT INCLUDE TRAILING SLASH.
+  NETLIFY_ASSET_PATH = "" # default is just an empty string
+  # NETLIFY_ASSET_PATH = "/path/to/assets" # custom must start with a slash
+
+[context.production]
+  # basic build command
+  command = "./netlify-build.sh"
+
+## EXAMPLE of a basic redirect - url will change from / to /loop
+#[[redirects]]
+#  from = "/"
+#  to = "/loop"
+
+## EXAMPLE of cache control headers. Netlify has its own HTTP/2 cache strategy, but uncomment this if you're behind an HTTP/1.1 reverse proxy
+# [[headers]]
+#  # the _next folder contains only files with hashes or directories with unique/random names per build
+#  for = "*/_next/*"
+#  [headers.values]
+#    # 31536000 = 365 days
+#    cache-control = '''
+#    public,
+#    max-age=31536000,
+#    immutable'''
+
+  ## Uncomment to use this redirect for Single Page Applications like create-react-app. 
+  ## Not needed for static site generators.
+  #[[redirects]]
+  #  from = "/*"
+  #  to = "/index.html"
+  #  status = 200
+  
+  ## (optional) Settings for Netlify Dev
+  ## https://github.com/netlify/netlify-dev-plugin#project-detection
+  #[dev] 
+  #  command = "yarn start" # Command to start your dev server
+  #  port = 3000 # Port that the dev server will be listening on
+  #  publish = "dist" # Folder with the static content for _redirect file
+  
+  ## more info on configuring this file: https://www.netlify.com/docs/netlify-toml-reference/ 

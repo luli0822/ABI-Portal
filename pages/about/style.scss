@@ -1,0 +1,31 @@
+@import "../../scss/layout-mixins";
+@import "../../scss/text-mixins";
+@import "../../scss/button-link-mixins";
+@import "../../scss/a11y-mixins";
+
+$root-class: "about";
+
+.#{$root-class} {
+  margin-top: 50px;
+
+  @include max-width-section();
+
+  &__content {
+    @include container();
+  }
+
+  &__heading {
+    @include heading-two();
+  }
+
+  &__body {
+    @include body();
+
+    margin-top: 25px;
+  }
+
+  &__cta {
+    // includes the mixin to make the __cta element use the global cta-button-primary styles
+    @include cta-button-primary();
+  }
+}

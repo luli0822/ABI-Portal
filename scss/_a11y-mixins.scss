@@ -1,0 +1,39 @@
+@import "../../scss/variables";
+
+/* =============================================
+=            Focus Mixins            =
+============================================= */
+
+/* focus outset */
+@mixin focus-outset($color) {
+  outline: none;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    border: 2px solid $color;
+    top: -4px;
+    bottom: -4px;
+    left: -4px;
+    right: -4px;
+  }
+}
+
+/* focus inset */
+@mixin focus-inset($color) {
+  outline: none;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    border: 2px solid $color;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+  }
+}

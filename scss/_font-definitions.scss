@@ -1,0 +1,39 @@
+/**
+FONT DEFINITIONS
+This should only be imported into master.scss
+
+URL references must be relative to this file.
+The withFonts Next.js plugin will import them and give them a hash so they can be cached.
+
+NOTE: If you don't set the URL's correctly, the build process will hang.
+
+*/
+
+/* dm-serif-display-regular - latin */
+@font-face {
+  // always set this to swap for better performance
+  font-display: "swap";
+  // use this name to reference the font in variables.scss (no need to import this file)
+  font-family: "DM Serif Display";
+  font-style: normal;
+  // font-weight must match any other font-weights you have applied to this font
+  font-weight: 400;
+  // src for IE9 lol
+  src: url("./fonts/dm-serif-display-v1-latin/dm-serif-display-v1-latin-regular.eot");
+  // src for locally stored versions,
+  // .eot - IE 6-8,
+  // .woff2 - super modern browsers,
+  // .woff - modern browsers
+  // .ttf - Safari, Android, iOS
+  src:
+    local("DM Serif Display Regular"),
+    local("DMSerifDisplay-Regular"),
+    url("./fonts/dm-serif-display-v1-latin/dm-serif-display-v1-latin-regular.eot?#iefix")
+    format("embedded-opentype"),
+    url("./fonts/dm-serif-display-v1-latin/dm-serif-display-v1-latin-regular.woff2")
+    format("woff2"),
+    url("./fonts/dm-serif-display-v1-latin/dm-serif-display-v1-latin-regular.woff")
+    format("woff"),
+    url("./fonts/dm-serif-display-v1-latin/dm-serif-display-v1-latin-regular.ttf")
+    format("truetype");
+}

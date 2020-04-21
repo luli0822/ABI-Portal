@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Meta /> renders correctly 1`] = `
+"<Fragment>
+  <ContentfulMeta siteDomain=\\"//www.domain.ca\\" pageId=\\"site-home-page\\" metaTitle={[undefined]} />
+</Fragment>"
+`;

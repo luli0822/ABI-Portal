@@ -1,0 +1,81 @@
+@import "../../scss/layout-mixins";
+@import "../../scss/text-mixins";
+@import "../../scss/button-link-mixins";
+@import "../../scss/a11y-mixins";
+
+$root-class: "contentful-hero";
+
+.#{$root-class} {
+  // max-width-section contains the background to the section max-width. Not necessary if your background is 100% width
+  @include max-width-section();
+  // standard section spacing - not always necessary, not always the best way to provide this (i.e. you might prefer a variable to use in padding or margin as necessary per design)
+  @include section-bottom-spacing();
+
+  background-color: $neutral-color;
+
+  // most designs won't use base-font-size for this, but here's an example of how you might dynamically build paddings and margins
+  padding-top: $base-font-size * 2px;
+  padding-bottom: $base-font-size * 2px;
+
+  &__content {
+    // this container() provides the max-width that constrains the content, as well as padding and margin needed for the rows and outside gutter
+    @include container();
+  }
+
+  &__heading {
+    @include heading-one();
+  }
+
+  &__detail-row {
+    // make-row provides the margin and padding necessary for a row
+    @include make-row();
+  }
+
+  &__body-col {
+    // make-col-ready provides the basic attributes needed for a col
+    @include make-col-ready();
+    // this generates a 6-column wide column for all breakpoints
+    @include make-col(6);
+
+    // this provides media-query for the md viewport and up
+    @include media-breakpoint-up(md) {
+      // this overrides the column size, setting it to 8 columns wide for md viewport and up
+      @include make-col(8);
+    }
+  }
+
+  &__cta-col {
+    @include make-col-ready();
+
+    @include media-breakpoint-down(sm) {
+      @include make-col(6);
+    }
+
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
+    }
+  }
+
+  &__rich-p {
+    @include body();
+  }
+
+  &__rich-b {
+    font-weight: bold;
+  }
+
+  &__rich-i {
+    font-style: italic;
+  }
+
+  &__rich-li {
+    list-style-type: disc;
+  }
+
+  &__cta {
+    // includes the mixin to make the __cta element use the global cta-button-primary styles
+    @include cta-button-primary();
+
+    margin-bottom: $grid-gutter-width;
+  }
+}

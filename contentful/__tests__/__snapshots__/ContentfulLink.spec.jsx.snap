@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContentfulLink /> Renders a pageLink correctly - snapshot 1`] = `
+"<Link href=\\"/?pageId=about-us-page&lang=en-CA#s\\" as=\\"/about-pg-en\\">
+  <a aria-label={[undefined]}>
+    Page Link Text
+  </a>
+</Link>"
+`;
+
+exports[`<ContentfulLink /> Renders an external link correctly - snapshot 1`] = `
+"<a href=\\"https://test.com\\" aria-label=\\"some accessibility text\\">
+  Externsl link text
+</a>"
+`;

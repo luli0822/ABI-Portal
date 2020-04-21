@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContentfulImage /> Renders just text with no markup 1`] = `
+"<TextReplacement text=\\"This is just regularText\\" replacements={{...}}>
+  This is just regularText
+</TextReplacement>"
+`;
+
+exports[`<ContentfulImage /> Renders text with correct markup added 1`] = `
+"<TextReplacement text=\\"This is a tradmark ™ and this worked is italicized\\" replacements={{...}}>
+  This is a tradmark 
+  <sup className=\\"sup\\">
+    ™
+  </sup>
+   and this worked is 
+  <span className=\\"i\\">
+    italicized
+  </span>
+</TextReplacement>"
+`;

@@ -1,0 +1,73 @@
+# uncomment the deploy stage after cloning the accellerator into a new repo
+# and update the build hook url on line 30
+
+image: node:10
+
+stages:
+  - lint+test
+  # - deploy
+  # - automation_tests
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+
+lint:
+  stage: lint+test
+  script:
+    - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc
+    - npm i
+    - npm run lint
+    - npm run test
+    # this builds the static pages. NODE_ENV ensures that errors are displayed.
+    # ! inverts the exit code of grep
+    # grep searches for 'prop type' in the console output to determine if there is a console error
+    # (nextjs static page builder doesn't fail on proptype erros)
+    # we don't use this as the final output because it has debugging code in it (i.e. proptype checking)
+    - '! NODE_ENV=test npm run build:static |& grep "prop type"'
+# deploy:
+#   stage: deploy
+#   script:
+#     - curl -X POST -d {} https://api.netlify.com/build_hooks/########
+#   only:
+#     - master
+#   when: manual
+
+# - This stage will run cruller tests in the pipeline.
+# - The stage will start after 10 minutes of the previous stage
+#   completion which is after completing netlify deployment.
+#   Note that on Prod, this step will run after completing the manual deploy
+# - Set the variable PIPLELINE=true to run puppeeteer scripts in the pipeline,
+#   we recommend using browserless to run the scripts using headless browser libraries (chromium).
+# - If you decide to not use browserless, don't set the variable.
+#   and you will need to configure headless libraries in your node image manually.
+# - You also can use HEADLESSCHROME=true instead of PIPLELINE=true, but it is finicky can
+#   run into issues
+# - BROWSERLESS IS RECOMMENDED TO BE USED TO RUN THE TESTS IN THE PIPELINE
+# .automation_tests:
+#   stage: automation_tests
+#   when: delayed
+#   start_in: 10 minutes
+#   before_script:
+#     - cd test-automation
+#     - npm i
+#   variables:
+#     PIPELINE: "true"
+#   script:
+#     - npm test
+
+# UNCOMMENT THIS STEP IF YOU WANT TO RUN CRULLER AUTOMATION TESTS ON SIT
+# automation_sit:
+#   extends: .automation_tests
+#   variables:
+#     BASEURL: "sit"
+#   except:
+#     - master
+
+# automation_prod:
+#   extends: .automation_tests
+#   variables:
+#     BASEURL: "prod"
+#   only:
+#     - master

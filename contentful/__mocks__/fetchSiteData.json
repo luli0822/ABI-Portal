@@ -1,0 +1,314 @@
+{
+  "siteEntry": {
+    "sys": {
+      "space": {
+        "sys": {
+          "id": "spaceId"
+        }
+      },
+      "id": "siteId",
+      "contentType": {
+        "sys": {
+          "id": "site",
+          "type": "link"
+        }
+      }
+    },
+    "fields": {
+      "title": {
+        "en-CA": "en title",
+        "fr-CA": "fr title"
+      },
+      "slug": {
+        "en-CA": "site-slug"
+      },
+      "indexPage": {
+        "en-CA": {
+          "sys": {
+            "id": "site-home-page"
+          }
+        }
+      },
+      "pages": {
+        "en-CA": []
+      },
+      "keyValues": {
+        "en-CA": [
+          {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "lang-toggle-key-value"
+            }
+          },
+          {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "rich-text-key-value"
+            }
+          }
+        ]
+      },
+      "navigation": {
+        "en-CA": [
+          {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "some-external-link"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "linkedEntries": {
+    "site-home-page": {
+      "sys": {
+        "id": "site-home-page",
+        "space": {},
+        "contentType": {
+          "id": "page"
+        }
+      },
+      "fields": {
+        "title": {
+          "en-CA": "title en",
+          "fr-CA": "title fr"
+        },
+        "description": {
+          "en-CA": "description en",
+          "fr-CA": "description en"
+        },
+        "openGraphTitle": {
+          "en-CA": "openGraphTitle en",
+          "fr-CA": "openGraphTitle en"
+        },
+        "openGraphDescription": {
+          "en-CA": "openGraphDescription en",
+          "fr-CA": "openGraphDescription en"
+        },
+        "slug": {
+          "en-CA": "home-pg-en",
+          "fr-CA": "home-pg-fr"
+        }
+      }
+    },
+    "some-external-link": {
+      "sys": {
+        "id": "some-external-link",
+        "space": {},
+        "contentType": {
+          "sys": {
+            "id": "externalLink"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-CA": "External link text",
+          "fr-CA": "External link text fr"
+        },
+        "url": {
+          "en-CA": "https://test.com",
+          "fr-CA": "https://test.com/fr"
+        }
+      }
+    },
+    "lang-toggle-key-value": {
+      "sys": {
+        "id": "lang-toggle-key-value",
+        "space": {},
+        "contentType": {
+          "id": "keyValue"
+        }
+      },
+      "fields": {
+        "slug": {
+          "en-CA": "lang-toggle-slug"
+        },
+        "value": {
+          "en-CA": "toggle English",
+          "fr-CA": "toggle French"
+        }
+      }
+    },
+    "rich-text-key-value": {
+      "sys": {
+        "id": "rich-text-key-value",
+        "space": {},
+        "contentType": {
+          "id": "keyRichText"
+        }
+      },
+      "fields": {
+        "slug": {
+          "en-CA": "rich-text-key-slug"
+        },
+        "richText": {
+          "en-CA": {
+            "nodeType": "document",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  { "nodeType": "text", "data": {}, "value": "some text value" }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "some-complex-block-1": {
+      "sys": {
+        "id": "some-complex-block-1",
+        "space": {},
+        "contentType": {
+          "id": "complexBlock"
+        }
+      },
+      "fields": {
+        "title": {
+          "en-CA": "complex block title",
+          "fr-CA": "complex block title - fr"
+        },
+        "body": {
+          "en-CA": {
+            "nodeType": "document",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "data": {},
+                    "value": "some paragraph in the complex block"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "some-complex-block-2": {
+      "sys": {
+        "id": "some-complex-block-2",
+        "space": {},
+        "contentType": {
+          "id": "complexBlock"
+        }
+      },
+      "fields": {
+        "title": {
+          "en-CA": "complex block 2 title",
+          "fr-CA": "complex block 2 title - fr"
+        },
+        "body": {
+          "en-CA": {
+            "nodeType": "document",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "data": {},
+                    "value": "some paragraph in the complex block 2"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "some-block-group": {
+      "sys": {
+        "id": "some-block-group",
+        "space": {},
+        "contentType": {
+          "id": "modularLayout"
+        }
+      },
+      "fields": {
+        "blocks": {
+          "en-CA": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "some-complex-block-1"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "some-complex-block-2"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "linkedAssets": {
+    "test-img.png": {
+      "sys": {
+        "id": "test-img.png"
+      },
+      "fields": {
+        "title": {
+          "en-CA": "some title",
+          "fr-CA": "some title fr"
+        },
+        "description": {
+          "en-CA": "some description",
+          "fr-CA": "some description fr"
+        },
+        "file": {
+          "en-CA": {
+            "url": "/test-img.png",
+            "fileName": "filename.png",
+            "contentType": "image/png",
+            "details": {
+              "image": {
+                "height": 20,
+                "width": 20
+              }
+            }
+          }
+        }
+      }
+    },
+    "test-img2.png": {
+      "sys": {
+        "id": "test-img2.png"
+      },
+      "fields": {
+        "file": {
+          "en-CA": {
+            "url": "/test-img2.png",
+            "fileName": "filename2.png",
+            "contentType": "image/png",
+            "details": {
+              "image": {
+                "height": 20,
+                "width": 20
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

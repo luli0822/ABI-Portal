@@ -1,0 +1,10 @@
+{
+  "test-img.png": {
+    "url": "data:image/png;base64,someUriData",
+    "meta": { "width": 10, "height": 10 }
+  },
+  "test-img2.png": {
+    "url": "data:image/png;base64,someUriData2",
+    "meta": { "width": 10, "height": 10 }
+  }
+}

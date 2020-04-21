@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContentfulImage> and <LazyImage> renders expected sources 1`] = `
+"<ContentfulImage asset={{...}} alt=\\"mock-alt\\" lazyload={true} cover={true} className=\\"\\">
+  <div className=\\"contentful-image \\">
+    <div className=\\"contentful-image__placeholder contentful-image__placeholder--visible contentful-image__placeholder--cover\\" style={{...}} />
+    <LazyImage imgContainerRef={{...}} file={{...}} className=\\"contentful-image__img contentful-image__img--hidden contentful-image__img--cover\\" baseSizes={{...}} alt=\\"mock-alt\\" onLoad={[Function: onLoad]}>
+      <picture>
+        <source type=\\"image/webp\\" srcSet=\\"/test-img.png?fm=webp&w=100\\" />
+        <img src=\\"/test-img.png?w=100\\" className=\\"contentful-image__img contentful-image__img--hidden contentful-image__img--cover\\" alt=\\"mock-alt\\" onLoad={[Function: onLoad]} />
+      </picture>
+    </LazyImage>
+  </div>
+</ContentfulImage>"
+`;

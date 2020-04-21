@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContentfulMeta /> renders correctly with icons 1`] = `
+"<Head>
+  <title>
+    en title
+  </title>
+  <meta name=\\"description\\" content=\\"description en\\" />
+  <meta property=\\"og:url\\" content=\\"https://www.test-fr.ca///\\" />
+  <link rel=\\"canonical\\" href=\\"https://www.test-fr.ca///\\" />
+  <meta property=\\"og:description\\" content=\\"openGraphDescription en\\" />
+  <meta property=\\"og:title\\" content=\\"openGraphTitle en\\" />
+  <link rel=\\"icon\\" type=\\"image/png\\" href=\\"/favicon.png?fm=png\\" />
+  <link rel=\\"icon\\" type=\\"image/png\\" sizes=\\"192x192\\" href=\\"/favicon.png?w=192&fm=png\\" />
+  <link rel=\\"icon\\" type=\\"image/png\\" sizes=\\"96x96\\" href=\\"/favicon.png?w=96&fm=png\\" />
+  <link rel=\\"icon\\" type=\\"image/png\\" sizes=\\"32x32\\" href=\\"/favicon.png?w=32&fm=png\\" />
+  <link rel=\\"icon\\" type=\\"image/png\\" sizes=\\"16x16\\" href=\\"/favicon.png?w=16&fm=png\\" />
+  <link rel=\\"apple-touch-icon\\" sizes=\\"180x180\\" href=\\"/favicon.png?w=180&fm=png\\" />
+  <link rel=\\"apple-touch-icon\\" sizes=\\"152x152\\" href=\\"/favicon.png?w=152&fm=png\\" />
+  <link rel=\\"apple-touch-icon\\" sizes=\\"144x144\\" href=\\"/favicon.png?w=144&fm=png\\" />
+  <link rel=\\"apple-touch-icon\\" sizes=\\"114x114\\" href=\\"/favicon.png?w=114&fm=png\\" />
+  <link rel=\\"apple-touch-icon\\" sizes=\\"120x120\\" href=\\"/favicon.png?w=120&fm=png\\" />
+  <link rel=\\"apple-touch-icon\\" sizes=\\"76x76\\" href=\\"/favicon.png?w=76&fm=png\\" />
+  <link rel=\\"apple-touch-icon\\" sizes=\\"60x60\\" href=\\"/favicon.png?w=60&fm=png\\" />
+  <link rel=\\"apple-touch-icon\\" sizes=\\"57x57\\" href=\\"/favicon.png?w=57&fm=png\\" />
+  <meta name=\\"msapplication-TileImage\\" content=\\"/favicon.png?fm=png\\" />
+  <meta name=\\"apple-mobile-web-app-title\\" content=\\"en title\\" />
+</Head>"
+`;
+
+exports[`<ContentfulMeta /> renders correctly with no icons 1`] = `
+"<Head>
+  <title>
+    en title
+  </title>
+  <meta name=\\"description\\" content=\\"description en\\" />
+  <meta property=\\"og:url\\" content=\\"https://www.test-fr.ca///\\" />
+  <link rel=\\"canonical\\" href=\\"https://www.test-fr.ca///\\" />
+  <meta property=\\"og:description\\" content=\\"openGraphDescription en\\" />
+  <meta property=\\"og:title\\" content=\\"openGraphTitle en\\" />
+  <meta name=\\"apple-mobile-web-app-title\\" content=\\"en title\\" />
+</Head>"
+`;
+
+exports[`<ContentfulMeta /> renders metaTitle prop correctly 1`] = `
+"<Head>
+  <title>
+    meta title
+  </title>
+  <meta name=\\"description\\" content=\\"description en\\" />
+  <meta property=\\"og:url\\" content=\\"https://www.test-fr.ca///\\" />
+  <link rel=\\"canonical\\" href=\\"https://www.test-fr.ca///\\" />
+  <meta property=\\"og:description\\" content=\\"openGraphDescription en\\" />
+  <meta property=\\"og:title\\" content=\\"openGraphTitle en\\" />
+  <link rel=\\"icon\\" type=\\"image/png\\" href=\\"/favicon.png?fm=png\\" />
+  <link rel=\\"icon\\" type=\\"image/png\\" sizes=\\"192x192\\" href=\\"/favicon.png?w=192&fm=png\\" />
+  <link rel=\\"icon\\" type=\\"image/png\\" sizes=\\"96x96\\" href=\\"/favicon.png?w=96&fm=png\\" />
+  <link rel=\\"icon\\" type=\\"image/png\\" sizes=\\"32x32\\" href=\\"/favicon.png?w=32&fm=png\\" />
+  <link rel=\\"icon\\" type=\\"image/png\\" sizes=\\"16x16\\" href=\\"/favicon.png?w=16&fm=png\\" />
+  <link rel=\\"apple-touch-icon\\" sizes=\\"180x180\\" href=\\"/favicon.png?w=180&fm=png\\" />
+  <link rel=\\"apple-touch-icon\\" sizes=\\"152x152\\" href=\\"/favicon.png?w=152&fm=png\\" />
+  <link rel=\\"apple-touch-icon\\" sizes=\\"144x144\\" href=\\"/favicon.png?w=144&fm=png\\" />
+  <link rel=\\"apple-touch-icon\\" sizes=\\"114x114\\" href=\\"/favicon.png?w=114&fm=png\\" />
+  <link rel=\\"apple-touch-icon\\" sizes=\\"120x120\\" href=\\"/favicon.png?w=120&fm=png\\" />
+  <link rel=\\"apple-touch-icon\\" sizes=\\"76x76\\" href=\\"/favicon.png?w=76&fm=png\\" />
+  <link rel=\\"apple-touch-icon\\" sizes=\\"60x60\\" href=\\"/favicon.png?w=60&fm=png\\" />
+  <link rel=\\"apple-touch-icon\\" sizes=\\"57x57\\" href=\\"/favicon.png?w=57&fm=png\\" />
+  <meta name=\\"msapplication-TileImage\\" content=\\"/favicon.png?fm=png\\" />
+  <meta name=\\"apple-mobile-web-app-title\\" content=\\"en title\\" />
+</Head>"
+`;
+
+exports[`<ContentfulMeta /> renders page title correctly 1`] = `
+"<Head>
+  <title>
+    title en | en title
+  </title>
+  <meta name=\\"description\\" content=\\"description en\\" />
+  <meta property=\\"og:url\\" content=\\"https://www.test.ca/about-pg-en/\\" />
+  <link rel=\\"canonical\\" href=\\"https://www.test.ca/about-pg-en/\\" />
+  <meta property=\\"og:description\\" content=\\"openGraphDescription en\\" />
+  <meta property=\\"og:title\\" content=\\"openGraphTitle en\\" />
+  <link rel=\\"icon\\" type=\\"image/png\\" href=\\"/favicon.png?fm=png\\" />
+  <link rel=\\"icon\\" type=\\"image/png\\" sizes=\\"192x192\\" href=\\"/favicon.png?w=192&fm=png\\" />
+  <link rel=\\"icon\\" type=\\"image/png\\" sizes=\\"96x96\\" href=\\"/favicon.png?w=96&fm=png\\" />
+  <link rel=\\"icon\\" type=\\"image/png\\" sizes=\\"32x32\\" href=\\"/favicon.png?w=32&fm=png\\" />
+  <link rel=\\"icon\\" type=\\"image/png\\" sizes=\\"16x16\\" href=\\"/favicon.png?w=16&fm=png\\" />
+  <link rel=\\"apple-touch-icon\\" sizes=\\"180x180\\" href=\\"/favicon.png?w=180&fm=png\\" />
+  <link rel=\\"apple-touch-icon\\" sizes=\\"152x152\\" href=\\"/favicon.png?w=152&fm=png\\" />
+  <link rel=\\"apple-touch-icon\\" sizes=\\"144x144\\" href=\\"/favicon.png?w=144&fm=png\\" />
+  <link rel=\\"apple-touch-icon\\" sizes=\\"114x114\\" href=\\"/favicon.png?w=114&fm=png\\" />
+  <link rel=\\"apple-touch-icon\\" sizes=\\"120x120\\" href=\\"/favicon.png?w=120&fm=png\\" />
+  <link rel=\\"apple-touch-icon\\" sizes=\\"76x76\\" href=\\"/favicon.png?w=76&fm=png\\" />
+  <link rel=\\"apple-touch-icon\\" sizes=\\"60x60\\" href=\\"/favicon.png?w=60&fm=png\\" />
+  <link rel=\\"apple-touch-icon\\" sizes=\\"57x57\\" href=\\"/favicon.png?w=57&fm=png\\" />
+  <meta name=\\"msapplication-TileImage\\" content=\\"/favicon.png?fm=png\\" />
+  <meta name=\\"apple-mobile-web-app-title\\" content=\\"en title\\" />
+</Head>"
+`;

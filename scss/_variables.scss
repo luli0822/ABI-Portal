@@ -1,0 +1,53 @@
+/*
+ *  Configuration variables for this site go here
+ */
+
+/*
+ *  COLORS
+ *  Use semantic color names (primary, secondary) whenever possible
+ */
+
+$white: #fff;
+$primary-color: #720e07;
+$secondary-color: #8b6220;
+$neutral-color: #eecf6d;
+$dark-color: #45050c;
+
+/*
+ *  FONTS
+ *  If using @font-face definitions, include those in the master scss, then use variables here to provide the preferred font name and fallbacks
+ */
+
+$heading-font: "DM Serif Display", Serif;
+$body-font: sans-serif;
+$accelerator-title-font: sans-serif;
+
+// provides a fallback for font-size()
+$base-font-size: 14.5;
+
+/*
+ *  BREAKPOINTS + LAYOUT
+ *  These are used by the layout mixins
+ */
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 481px,
+  md: 768px,
+  lg: 992px,
+  xl: 1248px
+);
+
+$container-max-widths: (
+  sm: 768px,
+  md: 992px,
+  lg: 1248px
+);
+
+$max-width: 1440px;
+
+$grid-columns: 12;
+$grid-gutter-width: 16px;
+
+// don't generate the bootstrap grid classes - use the mixins!
+$enable-grid-classes: false;

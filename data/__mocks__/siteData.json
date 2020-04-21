@@ -1,0 +1,428 @@
+{
+  "siteEntry": {
+    "sys": {
+      "space": {
+        "sys": {
+          "id": "spaceId"
+        }
+      },
+      "id": "siteId",
+      "contentType": {
+        "sys": {
+          "id": "site",
+          "type": "link"
+        }
+      }
+    },
+    "fields": {
+      "title": {
+        "en-CA": "en title",
+        "fr-CA": "fr title"
+      },
+      "slug": {
+        "en-CA": "site-slug"
+      },
+      "indexPage": {
+        "en-CA": {
+          "sys": {
+            "id": "site-home-page"
+          }
+        }
+      },
+      "pages": {
+        "en-CA": [
+          {
+            "sys": {
+              "id": "about-us-page"
+            }
+          }
+        ]
+      },
+      "keyValues": {
+        "en-CA": [
+          {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "lang-toggle-key-value"
+            }
+          },
+          {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "rich-text-key-value"
+            }
+          }
+        ]
+      },
+      "navigation": {
+        "en-CA": [
+          {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "about-us-page-link"
+            }
+          },
+          {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "some-external-link"
+            }
+          }
+        ]
+      },
+      "languageToggle": {
+        "en-CA": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Entry",
+            "id": "lang-toggle-key-value"
+          }
+        }
+      },
+      "languageToggleAccessibleText": {
+        "en-CA": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Entry",
+            "id": "lang-toggle-accessible-text-key-value"
+          }
+        }
+      }
+    }
+  },
+  "linkedEntries": {
+    "site-home-page": {
+      "sys": {
+        "id": "site-home-page",
+        "space": {},
+        "contentType": {
+          "id": "page",
+          "type": "Link",
+          "linkType": "ContentType"
+        }
+      },
+      "fields": {
+        "title": {
+          "en-CA": "title en",
+          "fr-CA": "title fr"
+        },
+        "description": {
+          "en-CA": "description en",
+          "fr-CA": "description en"
+        },
+        "openGraphTitle": {
+          "en-CA": "openGraphTitle en",
+          "fr-CA": "openGraphTitle en"
+        },
+        "openGraphDescription": {
+          "en-CA": "openGraphDescription en",
+          "fr-CA": "openGraphDescription en"
+        },
+        "slug": {
+          "en-CA": "home-pg-en",
+          "fr-CA": "home-pg-fr"
+        }
+      }
+    },
+    "about-us-page": {
+      "sys": {
+        "id": "about-us-page",
+        "space": {},
+        "contentType": {
+          "id": "page",
+          "type": "Link",
+          "linkType": "ContentType"
+        }
+      },
+      "fields": {
+        "title": {
+          "en-CA": "title en",
+          "fr-CA": "title fr"
+        },
+        "description": {
+          "en-CA": "description en",
+          "fr-CA": "description en"
+        },
+        "openGraphTitle": {
+          "en-CA": "openGraphTitle en",
+          "fr-CA": "openGraphTitle en"
+        },
+        "openGraphDescription": {
+          "en-CA": "openGraphDescription en",
+          "fr-CA": "openGraphDescription en"
+        },
+        "slug": {
+          "en-CA": "about-pg-en",
+          "fr-CA": "about-pg-fr"
+        }
+      }
+    },
+    "about-us-page-link": {
+      "sys": {
+        "id": "about-us-page-link",
+        "space": {},
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Entry",
+            "id": "pageLink"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-CA": "page link title",
+          "fr-CA": "page link title fr"
+        },
+        "page": {
+          "en-CA": {
+            "sys": {
+              "id": "about-us-page"
+            },
+            "fields": {
+              "slug": {
+                "en-CA": "some slug"
+              }
+            }
+          }
+        },
+        "hash": {
+          "en-CA": "s"
+        }
+      }
+    },
+    "some-external-link": {
+      "sys": {
+        "id": "some-external-link",
+        "space": {},
+        "contentType": {
+          "sys": {
+            "id": "externalLink",
+            "type": "Link",
+            "linkType": "Entry"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-CA": "External link text",
+          "fr-CA": "External link text fr"
+        },
+        "url": {
+          "en-CA": "https://test.com",
+          "fr-CA": "https://test.com/fr"
+        }
+      }
+    },
+    "lang-toggle-key-value": {
+      "sys": {
+        "id": "lang-toggle-key-value",
+        "space": {},
+        "contentType": {
+          "id": "keyValue"
+        }
+      },
+      "fields": {
+        "slug": {
+          "en-CA": "lang-toggle-slug"
+        },
+        "value": {
+          "en-CA": "toggle English",
+          "fr-CA": "toggle French"
+        }
+      }
+    },
+    "lang-toggle-accessible-text-key-value": {
+      "sys": {
+        "id": "lang-toggle-accessible-text-key-value",
+        "space": {},
+        "contentType": {
+          "id": "keyValue"
+        }
+      },
+      "fields": {
+        "slug": {
+          "en-CA": "lang-toggle-accessible-slug"
+        },
+        "value": {
+          "en-CA": "accesible toggle English",
+          "fr-CA": "accessible toggle French"
+        }
+      }
+    },
+    "rich-text-key-value": {
+      "sys": {
+        "id": "rich-text-key-value",
+        "space": {},
+        "contentType": {
+          "id": "keyRichText"
+        }
+      },
+      "fields": {
+        "slug": {
+          "en-CA": "rich-text-key-slug"
+        },
+        "richText": {
+          "en-CA": {
+            "nodeType": "document",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  { "nodeType": "text", "data": {}, "value": "some text value" }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "some-complex-block-1": {
+      "sys": {
+        "id": "some-complex-block-1",
+        "space": {},
+        "contentType": {
+          "id": "complexBlock",
+          "type": "Link",
+          "linkType": "ContentType"
+        }
+      },
+      "fields": {
+        "title": {
+          "en-CA": "complex block title",
+          "fr-CA": "complex block title - fr"
+        },
+        "body": {
+          "en-CA": {
+            "nodeType": "document",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "data": {},
+                    "value": "some paragraph in the complex block"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "some-complex-block-2": {
+      "sys": {
+        "id": "some-complex-block-2",
+        "space": {},
+        "contentType": {
+          "id": "complexBlock",
+          "type": "Link",
+          "linkType": "ContentType"
+        }
+      },
+      "fields": {
+        "title": {
+          "en-CA": "complex block 2 title",
+          "fr-CA": "complex block 2 title - fr"
+        },
+        "body": {
+          "en-CA": {
+            "nodeType": "document",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "data": {},
+                    "value": "some paragraph in the complex block 2"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "some-block-group": {
+      "sys": {
+        "id": "some-block-group",
+        "space": {},
+        "contentType": {
+          "id": "modularLayout"
+        }
+      },
+      "fields": {
+        "blocks": {
+          "en-CA": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "some-complex-block-1"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "some-complex-block-2"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "linkedAssets": {
+    "test-img.png": {
+      "sys": {
+        "id": "test-img.png"
+      },
+      "fields": {
+        "title": {
+          "en-CA": "some title",
+          "fr-CA": "some title fr"
+        },
+        "description": {
+          "en-CA": "some description",
+          "fr-CA": "some description fr"
+        },
+        "file": {
+          "en-CA": {
+            "url": "/test-img.png",
+            "fileName": "filename.png",
+            "contentType": "image/png",
+            "details": {}
+          }
+        }
+      }
+    },
+    "test-img2.png": {
+      "sys": {
+        "id": "test-img2.png"
+      },
+      "fields": {
+        "file": {
+          "en-CA": {
+            "url": "/test-img2.png",
+            "fileName": "filename2.png",
+            "contentType": "image/png",
+            "details": {}
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HomeHero /> renders correctly 1`] = `
+"<section className=\\"contentful-hero\\">
+  <div className=\\"contentful-hero__content\\">
+    <h1 className=\\"contentful-hero__heading\\">
+      some title
+    </h1>
+    <div className=\\"contentful-hero__detail-row\\">
+      <div className=\\"contentful-hero__body-col\\">
+        <RichText document={{...}} rootClass=\\"contentful-hero__rich\\" replacements={{...}} />
+      </div>
+      <div className=\\"contentful-hero__cta-col\\">
+        <ContentfulLink linkEntry={{...}} className=\\"contentful-hero__cta\\" onClick={[Function: onClick]} targetLang={[undefined]}>
+          some text
+        </ContentfulLink>
+        <ContentfulLink linkEntry={{...}} className=\\"contentful-hero__cta\\" targetLang={[undefined]}>
+          some text
+        </ContentfulLink>
+      </div>
+    </div>
+  </div>
+</section>"
+`;

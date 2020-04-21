@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AnimatedMediaPlayer /> renders correctly 1`] = `
+"<div className=\\"animated-media-player\\">
+  <div className=\\"animated-media-player__overlay \\">
+    <PlayButton />
+  </div>
+  <video muted={true} poster=\\"poster.jpg\\" className=\\"animated-media-player__video\\" tabIndex={0} onClick={[Function: clickHandler]} onKeyDown={[Function: keyDownHandler]} onMouseOver={[Function: mouseOverHandler]} onMouseOut={[Function: mouseOutHandler]} onEnded={[Function: endedHandler]} aria-label=\\"A video\\">
+    <source src=\\"video.mp4\\" type=\\"video/mp4\\" />
+  </video>
+</div>"
+`;

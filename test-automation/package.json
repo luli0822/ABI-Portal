@@ -1,0 +1,25 @@
+{
+  "name": "test-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cruller.config.js",
+  "scripts": {
+    "test": "jest",
+    "test:dev": "BASEURL='dev' npm test"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./testSetup.js"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@stamp/it": "^1.1.0",
+    "cruller": "^2.0.0",
+    "faker": "^4.1.0",
+    "jest": "^24.8.0",
+    "jest-each": "^24.9.0"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,71 @@
+/*
+ *  Reset the navigator styles.
+ *  This should only be imported into master.scss
+ */
+
+@import "variables";
+
+@at-root {
+  @-ms-viewport {
+    width: device-width;
+  } // stylelint-disable-line at-rule-no-vendor-prefix
+}
+
+// from bootstrap grid
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  // from bootstrap grid
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+
+  // needed for the font-size mixin
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  // needed for the font-size mixin
+  font-size: 1.45em !important;
+  line-height: 1;
+  font-family: $body-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+// Disable next build watcher/indicator because it causes Axe tests to fail locally
+#__next-build-watcher {
+  display: none;
+}
+
+// Set these style to always take the page full view height and have the footer at the bottom of the page view
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+}
+
+main {
+  flex: 1 0 auto;
+}

@@ -1,0 +1,54 @@
+@import "../../scss/a11y-mixins";
+@import "../../scss/button-link-mixins";
+@import "../../scss/layout-mixins";
+
+$rootClass: "header";
+
+.#{$rootClass} {
+  position: relative;
+  background-color: $dark-color;
+  height: 50px;
+  z-index: 6;
+
+  &__fixed {
+    background-color: $dark-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__nav {
+    @include container();
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo-img {
+    display: flex;
+    width: 65px;
+    max-width: 100px;
+  }
+
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  &__nav-list-item {
+    padding: 10px;
+  }
+
+  &__nav-link {
+    text-decoration: none;
+    color: $neutral-color;
+
+    &:focus {
+      @include focus-outset($neutral-color);
+    }
+  }
+}

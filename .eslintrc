@@ -1,0 +1,11 @@
+{
+  "extends": ["airbnb", "@loblaw-digital"],
+  "rules": {
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["**/*.spec.js", "**/*.spec.jsx"]
+      }
+    ]
+  }
+}

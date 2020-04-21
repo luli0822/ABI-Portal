@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pathMap() generates the right paths from staticSiteData 1`] = `
+Object {
+  "/some-asset-prefix/": Object {
+    "page": "/",
+    "query": Object {
+      "analyticsPageName": "title-en",
+      "lang": "en-CA",
+      "pageId": "site-home-page",
+    },
+  },
+  "/some-asset-prefix/about-pg-en": Object {
+    "page": "/",
+    "query": Object {
+      "analyticsPageName": "title-en",
+      "lang": "en-CA",
+      "pageId": "about-us-page",
+    },
+  },
+  "/some-asset-prefix/about-pg-fr": Object {
+    "page": "/",
+    "query": Object {
+      "analyticsPageName": "title-en",
+      "lang": "fr-CA",
+      "pageId": "about-us-page",
+    },
+  },
+  "/some-asset-prefix/home-pg-fr": Object {
+    "page": "/",
+    "query": Object {
+      "analyticsPageName": "title-en",
+      "lang": "fr-CA",
+      "pageId": "site-home-page",
+    },
+  },
+}
+`;
+
+exports[`pathsForPageEntry() generates the EN and FR links for a page 1`] = `
+Array [
+  Object {
+    "/some-asset-prefix/about-pg-en": Object {
+      "page": "/",
+      "query": Object {
+        "analyticsPageName": "title-en",
+        "lang": "en-CA",
+        "pageId": "about-us-page",
+      },
+    },
+  },
+  Object {
+    "/some-asset-prefix/about-pg-fr": Object {
+      "page": "/",
+      "query": Object {
+        "analyticsPageName": "title-en",
+        "lang": "fr-CA",
+        "pageId": "about-us-page",
+      },
+    },
+  },
+]
+`;
+
+exports[`pathsForPageEntry() generates the EN and FR links for an index page 1`] = `
+Array [
+  Object {
+    "/some-asset-prefix/": Object {
+      "page": "/",
+      "query": Object {
+        "analyticsPageName": "title-en",
+        "lang": "en-CA",
+        "pageId": "site-home-page",
+      },
+    },
+  },
+  Object {
+    "/some-asset-prefix/home-pg-fr": Object {
+      "page": "/",
+      "query": Object {
+        "analyticsPageName": "title-en",
+        "lang": "fr-CA",
+        "pageId": "site-home-page",
+      },
+    },
+  },
+]
+`;

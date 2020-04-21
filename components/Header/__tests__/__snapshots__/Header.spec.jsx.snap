@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> renders correctly 1`] = `
+"<header id=\\"header\\" className=\\"header\\">
+  <SkipNav skipToLinkText=\\"Skip to main content\\" />
+  <div className=\\"header__fixed\\">
+    <nav className=\\"header__nav\\">
+      <ul className=\\"header__nav-list\\">
+        <li className=\\"header__nav-list-item\\">
+          <ContentfulLink linkEntry={{...}} className=\\"header__nav-link\\" data-cruller=\\"header__link1\\" onClick={[Function: onClick]} targetLang={[undefined]}>
+            Home Page
+          </ContentfulLink>
+        </li>
+        <li className=\\"header__nav-list-item\\">
+          <ContentfulLink linkEntry={{...}} className=\\"header__nav-link\\" data-cruller=\\"header__link1\\" onClick={[Function: onClick]} targetLang={[undefined]}>
+            External Link
+          </ContentfulLink>
+        </li>
+      </ul>
+      <ul className=\\"header__nav-list\\">
+        <li className=\\"header__nav-list-item\\">
+          <LanguageSwitch linkData={{...}} className=\\"header__nav-link\\" />
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>"
+`;

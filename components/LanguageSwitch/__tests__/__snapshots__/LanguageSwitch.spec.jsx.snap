@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LanguageSwitch /> renders correctly 1`] = `
+"<a className=\\"some-class-name\\" href=\\"/some-href\\" aria-label=\\"Switch lang to EN\\">
+  change lang
+</a>"
+`;

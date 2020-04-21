@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RichText />  renders correctly 1`] = `
+"<RichText document={{...}} rootClass=\\"rich-text\\" replacements={{...}}>
+  <p className=\\"rich-text-p\\">
+    <TextReplacement text=\\"Text without markings italicized\\" replacements={{...}}>
+      Text without markings italicized
+    </TextReplacement>
+  </p>
+</RichText>"
+`;
+
+exports[`<RichText />  renders correctly with Text Replacement markup 1`] = `
+"<RichText document={{...}} replacements={{...}} rootClass=\\"rich-text\\">
+  <p className=\\"rich-text-p\\">
+    <TextReplacement text=\\"Text without markings italicized\\" replacements={{...}}>
+      Text without markings 
+      <span className=\\"i\\">
+        italicized
+      </span>
+    </TextReplacement>
+  </p>
+</RichText>"
+`;
+
+exports[`<RichText />  renders correctly with contentful link 1`] = `
+"<RichText document={{...}} replacements={{...}} rootClass=\\"rich-text\\">
+  <p className=\\"rich-text-p\\">
+    <span className=\\"rich-text-b\\">
+      <TextReplacement text=\\"We bring marketing sites to life\\" replacements={{...}}>
+        We bring marketing sites to life
+      </TextReplacement>
+    </span>
+    <TextReplacement text=\\" for \\" replacements={{...}}>
+       for 
+    </TextReplacement>
+    <span className=\\"rich-text-i\\">
+      <TextReplacement text=\\"brands\\" replacements={{...}}>
+        brands
+      </TextReplacement>
+    </span>
+    <TextReplacement text=\\" across the organization. Learn more \\" replacements={{...}}>
+       across the organization. Learn more 
+    </TextReplacement>
+    <ContentfulLink linkEntry={{...}} className=\\"rich-text-link\\" targetLang={[undefined]}>
+      <a href=\\"www.site.com\\" aria-label=\\"accessible text \\" className=\\"rich-text-link\\">
+        <TextReplacement text=\\"mock link title italicized\\" replacements={{...}}>
+          mock link title 
+          <span className=\\"i\\">
+            italicized
+          </span>
+        </TextReplacement>
+      </a>
+    </ContentfulLink>
+    <TextReplacement text=\\"\\" replacements={{...}} />
+  </p>
+  <p className=\\"rich-text-p\\">
+    <TextReplacement text=\\"\\" replacements={{...}} />
+  </p>
+  <p className=\\"rich-text-p\\">
+    <TextReplacement text=\\"\\" replacements={{...}} />
+  </p>
+</RichText>"
+`;
+
+exports[`<RichText />  renders marks correctly with correct classes 1`] = `
+"<RichText document={{...}} rootClass=\\"rich-text\\" replacements={{...}}>
+  <p className=\\"rich-text-p\\">
+    <span className=\\"rich-text-b\\">
+      <TextReplacement text=\\"Bold Text\\" replacements={{...}}>
+        Bold Text
+      </TextReplacement>
+    </span>
+    <TextReplacement text=\\" for \\" replacements={{...}}>
+       for 
+    </TextReplacement>
+    <span className=\\"rich-text-i\\">
+      <TextReplacement text=\\"Italic Text\\" replacements={{...}}>
+        Italic Text
+      </TextReplacement>
+    </span>
+  </p>
+  <ul className=\\"rich-text-ul\\">
+    <li className=\\"rich-text-li\\">
+      <p className=\\"rich-text-p\\">
+        <TextReplacement text=\\"point 1\\" replacements={{...}}>
+          point 1
+        </TextReplacement>
+      </p>
+    </li>
+    <li className=\\"rich-text-li\\">
+      <p className=\\"rich-text-p\\">
+        <TextReplacement text=\\"point 2\\" replacements={{...}}>
+          point 2
+        </TextReplacement>
+      </p>
+    </li>
+  </ul>
+</RichText>"
+`;

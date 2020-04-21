@@ -1,0 +1,49 @@
+@import "../../scss/a11y-mixins";
+@import "../../scss/button-link-mixins";
+@import "../../scss/layout-mixins";
+@import "../../scss/text-mixins";
+
+$rootClass: "footer";
+
+.#{$rootClass} {
+  background: black;
+  flex: 0 0 auto;
+  // This is to position the footer to the bottom of the page
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  &__container {
+    @include container();
+
+    padding: 40px 0;
+  }
+
+  &__nav-list {
+    display: flex;
+    justify-content: center;
+
+    @include media-breakpoint-up(md) {
+      justify-content: flex-end;
+    }
+  }
+
+  &__nav-list-item {
+    padding-right: 30px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    @include media-breakpoint-up(md) {
+      &:last-child {
+        padding-right: 30px;
+      }
+    }
+  }
+
+  &__nav-link {
+    text-decoration: none;
+    color: $white;
+  }
+}

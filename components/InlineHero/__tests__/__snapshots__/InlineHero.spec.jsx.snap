@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InlineHero /> renders correctly 1`] = `
+"<section className=\\"inline-hero\\">
+  <div className=\\"inline-hero__content\\">
+    <div className=\\"inline-hero__cover-image\\">
+      <ContentfulImage asset={{...}} className=\\"inline-hero__image\\" cover={true} alt={[undefined]} lazyload={true} />
+      <div className=\\"inline-hero__image-screen\\" />
+    </div>
+    <h2 className=\\"inline-hero__heading\\">
+      some title
+    </h2>
+    <RichText document={{...}} rootClass=\\"inline-hero__rich\\" replacements={{...}} />
+    <div className=\\"inline-hero__cta-container\\">
+      <ContentfulLink linkEntry={{...}} className=\\"inline-hero__cta\\" targetLang={[undefined]}>
+        some text
+      </ContentfulLink>
+      <ContentfulLink linkEntry={{...}} className=\\"inline-hero__cta\\" targetLang={[undefined]}>
+        some text
+      </ContentfulLink>
+    </div>
+  </div>
+</section>"
+`;

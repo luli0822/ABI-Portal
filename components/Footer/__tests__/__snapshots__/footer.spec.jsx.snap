@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> renders correctly 1`] = `
+"<footer id=\\"footer\\" className=\\"footer\\">
+  <div className=\\"footer__container\\">
+    <div className=\\"footer__nav-links-container\\">
+      <ul className=\\"footer__nav-list\\">
+        <li className=\\"footer__nav-list-item\\">
+          <ContentfulLink linkEntry={{...}} className=\\"footer__nav-link\\" targetLang={[undefined]}>
+            Link 1
+          </ContentfulLink>
+        </li>
+        <li className=\\"footer__nav-list-item\\">
+          <ContentfulLink linkEntry={{...}} className=\\"footer__nav-link\\" targetLang={[undefined]}>
+            Link 2
+          </ContentfulLink>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>"
+`;

@@ -1,0 +1,43 @@
+@import "variables";
+
+/**
+This mixin standardizes font sizes across browsers while respecting the user's font base-size in their browser.
+The $size passed here should be the desired pixels without the unit, i.e. to do font-size: 14px, use @include font-size(14);
+This relies on the <html> and <body> font-size set in _resets.scss
+**/
+@mixin font-size($size: $base-font-size, $important: "false") {
+  @if $important== "true" {
+    font-size: ($size * 100%/14.5) ( !important);
+  }
+
+  font-size: ($size * 100%/14.5);
+}
+
+/**
+This is an example of a style guide implementation.
+Each mixin should match something in your project style guide.
+**/
+
+@mixin heading-one {
+  @include font-size(50);
+
+  font-family: $heading-font;
+  font-weight: 400;
+  color: $primary-color;
+  margin-bottom: $base-font-size * 1px;
+}
+
+@mixin heading-two {
+  @include font-size(40);
+
+  font-family: $heading-font;
+  font-weight: 400;
+  color: $secondary-color;
+  margin-bottom: $base-font-size * 1px;
+}
+
+@mixin body {
+  @include font-size();
+
+  margin-bottom: $base-font-size * 1px;
+}

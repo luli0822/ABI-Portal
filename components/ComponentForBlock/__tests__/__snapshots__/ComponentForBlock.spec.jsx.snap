@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ComponentForBlock /> renders Block Group 1`] = `"<TileSection content={{...}} isFirstChild={true} />"`;
+
+exports[`<ComponentForBlock /> renders Complex Block 1`] = `"<Hero content={{...}} isFirstChild={true} />"`;
+
+exports[`<ComponentForBlock /> renders correct props for Block Group 1`] = `
+Object {
+  "content": Object {
+    "blocks": Array [
+      Object {
+        "id": "complex-block-id",
+        "primaryLink": Object {
+          "fields": Object {
+            "accessibleText": Object {
+              "en-CA": "Page Link Accessible Text EN",
+            },
+            "title": Object {
+              "en-CA": "Page Link Title EN",
+            },
+          },
+          "sys": Object {
+            "contentType": Object {
+              "sys": Object {
+                "id": "pageLink",
+              },
+            },
+            "id": "page-link-id",
+          },
+        },
+        "primaryLinkAccessibleText": "Page Link Accessible Text EN",
+        "primaryLinkText": "Page Link Title EN",
+        "title": "Complex Block Title EN",
+      },
+    ],
+    "id": "block-group-id",
+    "title": "Complex Block Title EN",
+  },
+  "isFirstChild": true,
+}
+`;
+
+exports[`<ComponentForBlock /> renders correct props for Complex Block 1`] = `
+Object {
+  "content": Object {
+    "id": "complex-block-id",
+    "primaryLink": Object {
+      "fields": Object {
+        "accessibleText": Object {
+          "en-CA": "Page Link Accessible Text EN",
+        },
+        "title": Object {
+          "en-CA": "Page Link Title EN",
+        },
+      },
+      "sys": Object {
+        "contentType": Object {
+          "sys": Object {
+            "id": "pageLink",
+          },
+        },
+        "id": "page-link-id",
+      },
+    },
+    "primaryLinkAccessibleText": "Page Link Accessible Text EN",
+    "primaryLinkText": "Page Link Title EN",
+    "title": "Complex Block Title EN",
+  },
+  "isFirstChild": true,
+}
+`;

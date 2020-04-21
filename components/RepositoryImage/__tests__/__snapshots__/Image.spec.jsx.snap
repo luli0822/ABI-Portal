@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Image /> renders correctly 1`] = `
+"<picture>
+  <Sources image={{...}} breakpointPixels={480} widthPercent={100} type=\\"image/png\\" isMinWidth={false} />
+  <Sources image={{...}} breakpointPixels={767} widthPercent={100} type=\\"image/png\\" isMinWidth={false} />
+  <Sources image={{...}} breakpointPixels={991} widthPercent={100} type=\\"image/png\\" isMinWidth={false} />
+  <Sources image={{...}} breakpointPixels={1247} widthPercent={100} type=\\"image/png\\" isMinWidth={false} />
+  <Sources image={{...}} breakpointPixels={1248} widthPercent={100} type=\\"image/png\\" isMinWidth={true} />
+  <img src=\\"test-1440.png\\" className=\\"\\" alt=\\"alt-text\\" onLoad={[Function: onLoad]} />
+</picture>"
+`;

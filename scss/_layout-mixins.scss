@@ -1,0 +1,90 @@
+/*
+ *  This file provides the layout mixins for use in BEM components
+ *  This should be imported anywhere you need to define your layouts
+ *  Based on https://medium.com/@erik_flowers/how-youve-been-getting-the-bootstrap-grid-all-wrong-and-how-to-fix-it-6d97b920aa40
+ *
+ *  If you want global section, container, and row classes, uncomment the classes at the end of this file
+ */
+
+/** EXAMPLES
+https://medium.com/@erik_flowers/how-youve-been-getting-the-bootstrap-grid-all-wrong-and-how-to-fix-it-6d97b920aa40
+
+<section class="block">
+  <div class="block__content">
+    <div class="block__button-row">
+      <div class="block__button-col">
+        <button class="block__button">Button!</button>
+
+block {
+  // this provides the standard max-width attribute on the block itself, limiting the background-color. Omit for full-width background
+  @include max-width-section();
+
+  // this applies standard margin to the bottom of the section. Use only if your design calls for it.
+  @include section-bottom-spacing();
+
+  // background color will only extend to the max-width
+  background-color: light-blue;
+}
+
+block__content {
+  // provide the container for the content. Must be parent to rows.
+  @include container():
+}
+
+block__button-row {
+  // a row. must be a child of the container
+  @include make-row();
+}
+
+block__button-col {
+  // a column. use make-col-ready() to provide the baseline, and then make-col() in the appropriate breakpoints
+  @include make-col-ready();
+  @include make-col(6); // 50% column at xs+
+
+  @include media-breakpoint-up(md) {
+    @include make-col(4); // 33% column at md+
+  }
+}
+
+block__button {
+  border: 1px solid black;
+}
+
+*/
+
+@import "variables";
+
+// import media-breakpoint-only, media-breakpoint-up, media-breakpoint-down
+// make-col-ready, make-col, etc
+// WE DON'T USE BOOTSTRAP CLASSES DIRECTLY. Instead, use the mixins to apply container/row/col classes
+// https://medium.com/@erik_flowers/how-youve-been-getting-the-bootstrap-grid-all-wrong-and-how-to-fix-it-6d97b920aa40
+@import "_bootstrap-4-grid/grid";
+
+// A section that respects max-width.
+// If you want your section to cover the whole width, you don't need a mixin,
+// just wrap the content in a container.
+@mixin max-width-section {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $max-width;
+}
+
+// standard spacing between sections
+@mixin section-bottom-spacing {
+  // you'll want to change this
+  margin-bottom: $base-font-size * 2px;
+}
+
+// containter constrains content to a max-width generally less than the section max-width.
+// Allows the section background to pad the content, and the padding width can be flexible.
+// If we merely applied padding to the section, we would have static padding width at each breakpoint.
+// Note that we can add padding to the section to provide min-padding around the container.
+@mixin container {
+  @include make-container();
+
+  @include media-breakpoint-up(md) {
+    @include make-container-max-widths;
+  }
+}
+
+// ROWS AND COLUMNS are provided by bootstrap mixins, see the above example, the hero component, and the readme.

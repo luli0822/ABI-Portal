@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loop page renders correctly 1`] = `
+"<Fragment>
+  <Meta pageId=\\"site-home-page\\" siteDomain=\\"//www.domain.ca\\" />
+  <Header navigationEntries={{...}} skipNavText=\\"Skip to main content\\" langSwitchLink={{...}} logo={[undefined]} pushCustomLinkEvent={[Function: mockConstructor]} />
+  <main id=\\"main\\" />
+  <Footer navigationEntries={{...}} />
+</Fragment>"
+`;

@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContentfulImage /> and <StaticImage /> Does not render a <LazyImage /> if not in viewport and lazyload is enabled 1`] = `
+"<div className=\\"contentful-image \\">
+  <div className=\\"contentful-image__placeholder contentful-image__placeholder--visible contentful-image__placeholder--cover\\" style={{...}} />
+</div>"
+`;
+
+exports[`<ContentfulImage /> and <StaticImage /> Renders a <LazyImage /> if is in viewport and lazyload is enabled 1`] = `
+"<div className=\\"contentful-image \\">
+  <div className=\\"contentful-image__placeholder contentful-image__placeholder--visible contentful-image__placeholder--cover\\" style={{...}} />
+  <LazyImage imgContainerRef={{...}} file={{...}} className=\\"contentful-image__img contentful-image__img--hidden contentful-image__img--cover\\" baseSizes={{...}} alt=\\"mock-alt\\" onLoad={[Function: onLoad]} />
+</div>"
+`;
+
+exports[`<ContentfulImage /> and <StaticImage /> Renders a <StaticImage> if lazyload is disabled, <StaticImage> renders appropriate <source> tags 1`] = `
+"<ContentfulImage asset={{...}} alt=\\"mock-alt\\" lazyload={false} cover={false} className=\\"\\">
+  <div className=\\"contentful-image \\">
+    <div className=\\"contentful-image__placeholder contentful-image__placeholder--visible \\" style={{...}} />
+    <StaticImage file={{...}} className=\\"contentful-image__img contentful-image__img--hidden \\" baseSizes={{...}} alt=\\"mock-alt\\" onLoad={[Function: onLoad]} isSVG={false} previewAsset=\\"data:image/png;base64,someUriData\\">
+      <picture>
+        <source type=\\"image/webp\\" srcSet=\\"/test-img.png?fm=webp&w=100\\" media=\\"(max-width: 100px)\\" />
+        <source type=\\"image/png\\" srcSet=\\"/test-img.png?w=100\\" media=\\"(max-width: 100px)\\" />
+        <source type=\\"image/webp\\" srcSet=\\"/test-img.png?fm=webp&w=200\\" media=\\"(max-width: 200px)\\" />
+        <source type=\\"image/png\\" srcSet=\\"/test-img.png?w=200\\" media=\\"(max-width: 200px)\\" />
+        <source type=\\"image/webp\\" srcSet=\\"/test-img.png?fm=webp&w=300\\" media=\\"(max-width: 300px)\\" />
+        <source type=\\"image/png\\" srcSet=\\"/test-img.png?w=300\\" media=\\"(max-width: 300px)\\" />
+        <source type=\\"image/webp\\" srcSet=\\"/test-img.png?fm=webp&w=400\\" media=\\"(max-width: 400px)\\" />
+        <source type=\\"image/png\\" srcSet=\\"/test-img.png?w=400\\" media=\\"(max-width: 400px)\\" />
+        <source type=\\"image/webp\\" srcSet=\\"/test-img.png?fm=webp&w=500\\" media=\\"(max-width: 500px)\\" />
+        <source type=\\"image/png\\" srcSet=\\"/test-img.png?w=500\\" media=\\"(max-width: 500px)\\" />
+        <source type=\\"image/webp\\" srcSet=\\"/test-img.png?fm=webp&w=600\\" media=\\"(max-width: 600px)\\" />
+        <source type=\\"image/png\\" srcSet=\\"/test-img.png?w=600\\" media=\\"(max-width: 600px)\\" />
+        <source type=\\"image/webp\\" srcSet=\\"/test-img.png?fm=webp&w=700\\" media=\\"(max-width: 700px)\\" />
+        <source type=\\"image/png\\" srcSet=\\"/test-img.png?w=700\\" media=\\"(max-width: 700px)\\" />
+        <source type=\\"image/webp\\" srcSet=\\"/test-img.png?fm=webp&w=800\\" media=\\"(max-width: 800px)\\" />
+        <source type=\\"image/png\\" srcSet=\\"/test-img.png?w=800\\" media=\\"(max-width: 800px)\\" />
+        <source type=\\"image/webp\\" srcSet=\\"/test-img.png?fm=webp&w=900\\" media=\\"(max-width: 900px)\\" />
+        <source type=\\"image/png\\" srcSet=\\"/test-img.png?w=900\\" media=\\"(max-width: 900px)\\" />
+        <source type=\\"image/webp\\" srcSet=\\"/test-img.png?fm=webp&w=1000\\" media=\\"(max-width: 1000px)\\" />
+        <source type=\\"image/png\\" srcSet=\\"/test-img.png?w=1000\\" media=\\"(max-width: 1000px)\\" />
+        <source type=\\"image/webp\\" srcSet=\\"/test-img.png?fm=webp&w=1100\\" media=\\"(max-width: 1100px)\\" />
+        <source type=\\"image/png\\" srcSet=\\"/test-img.png?w=1100\\" media=\\"(max-width: 1100px)\\" />
+        <source type=\\"image/webp\\" srcSet=\\"/test-img.png?fm=webp&w=1200\\" media=\\"(max-width: 1200px)\\" />
+        <source type=\\"image/png\\" srcSet=\\"/test-img.png?w=1200\\" media=\\"(max-width: 1200px)\\" />
+        <source type=\\"image/webp\\" srcSet=\\"/test-img.png?fm=webp&w=1300\\" media=\\"(max-width: 1300px)\\" />
+        <source type=\\"image/png\\" srcSet=\\"/test-img.png?w=1300\\" media=\\"(max-width: 1300px)\\" />
+        <source type=\\"image/webp\\" srcSet=\\"/test-img.png?fm=webp&w=1440\\" media=\\"(max-width: 1440px)\\" />
+        <source type=\\"image/png\\" srcSet=\\"/test-img.png?w=1440\\" media=\\"(max-width: 1440px)\\" />
+        <source type=\\"image/webp\\" srcSet=\\"/test-img.png?fm=webp&w=1440\\" media=\\"(min-width: 1440px)\\" />
+        <source type=\\"image/png\\" srcSet=\\"/test-img.png?w=1440\\" media=\\"(min-width: 1440px)\\" />
+        <img src=\\"/test-img.png?w=1440\\" className=\\"contentful-image__img contentful-image__img--hidden \\" alt=\\"mock-alt\\" onLoad={[Function: onLoad]} />
+      </picture>
+    </StaticImage>
+  </div>
+</ContentfulImage>"
+`;

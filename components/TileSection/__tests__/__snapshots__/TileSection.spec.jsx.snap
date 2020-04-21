@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TileSection /> renders correctly 1`] = `
+"<section className=\\"tile-section\\">
+  <div className=\\"tile-section__content\\">
+    <h2 className=\\"tile-section__heading\\">
+      What can we build for you?
+    </h2>
+    <RichText document={{...}} rootClass=\\"tile-section__rich\\" replacements={{...}} />
+    <ul className=\\"tile-section__tile-row\\">
+      <li className=\\"tile-section__tile-col\\">
+        <div className=\\"tile-section__tile\\">
+          <h3 className=\\"tile-section__tile-heading\\">
+            <ContentfulImage asset={{...}} className=\\"tile-section__tile-img\\" alt={[undefined]} lazyload={true} cover={false} />
+            <TextReplacement text=\\"Tile 1\\" replacements={{...}} />
+          </h3>
+          <RichText document={{...}} rootClass=\\"tile-section__tile\\" replacements={{...}} />
+        </div>
+      </li>
+      <li className=\\"tile-section__tile-col\\">
+        <div className=\\"tile-section__tile\\">
+          <h3 className=\\"tile-section__tile-heading\\">
+            <ContentfulImage asset={{...}} className=\\"tile-section__tile-img\\" alt={[undefined]} lazyload={true} cover={false} />
+            <TextReplacement text=\\"Tile 2\\" replacements={{...}} />
+          </h3>
+          <RichText document={{...}} rootClass=\\"tile-section__tile\\" replacements={{...}} />
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>"
+`;

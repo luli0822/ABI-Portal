@@ -1,0 +1,29 @@
+@import "../../scss/a11y-mixins";
+
+$rootClass: "skip-nav";
+
+.#{$rootClass} {
+  display: flex;
+  justify-content: center;
+
+  &__link {
+    overflow: hidden;
+    height: 1px;
+    margin: -1px;
+
+    &:focus {
+      @include focus-inset($white);
+
+      // position absolute is needed here to override the position: relative in the focus mixin
+      position: absolute;
+      background-color: $primary-color;
+      padding: 10px;
+      color: $white;
+      z-index: 9999;
+      text-align: center;
+      height: auto;
+      min-width: 220px;
+      top: 10px;
+    }
+  }
+}

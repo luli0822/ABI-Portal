@@ -1,0 +1,11 @@
+/*
+ *  Global styles
+ *  This should only be imported at the page level. Do not import into any component.
+ */
+
+// Import any custom font definitions. Note that DX projects must use licensed fonts, which usually means including a <Link.../> snippet in _document.jsx instead
+// Note that components should be using font name variables, see _variables.scss
+@import "font-definitions";
+
+// Import baseline resets
+@import "resets";
